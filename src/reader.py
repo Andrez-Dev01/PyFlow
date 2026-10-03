@@ -13,4 +13,10 @@ def load_csv(file_path):
     except FileNotFoundError:
         raise FileNotFoundError(f"File not found: {file_path}")
 
+    except PermissionError:
+        raise PermissionError(f"Permission denied: {file_path}")
+
+    except csv.Error as e:
+        raise csv.Error(f"Malformed CSV in {file_path}: {e}")
+
     return characters
