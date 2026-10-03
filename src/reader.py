@@ -19,4 +19,7 @@ def load_csv(file_path):
     except csv.Error as e:
         raise csv.Error(f"Malformed CSV in {file_path}: {e}")
 
+    if len(characters) == 0:
+        raise ValueError(f"No characters found in {file_path}")
+
     return characters
