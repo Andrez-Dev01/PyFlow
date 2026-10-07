@@ -2,3 +2,6 @@ venv/
 __pycache__/
 *.pyc
 .env
+
+# Local study notes. Not part of the project.
+journal/
