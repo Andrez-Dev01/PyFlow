@@ -31,6 +31,9 @@ Build a practical Python project that demonstrates API usage, JSON/data processi
 3. Activate it: `venv\Scripts\activate` (Windows) or `source venv/bin/activate` (Mac/Linux)
 4. Install dependencies: `pip install -r requirements.txt`
 5. Run: `python main.py`
+6. Run tests: `python -m pytest`
+
+GitHub Actions runs those same tests on every push and pull request (`.github/workflows/ci.yml`).
 
 ---
 
@@ -58,7 +61,7 @@ Build a practical Python project that demonstrates API usage, JSON/data processi
 ### T0.2 — Environment
 - [x] Create virtual environment
 - [x] Create dependency file
-- [ ] Document setup instructions
+- [x] Document setup instructions
 
 **Done when:** A new environment can install dependencies and run the project.
 
@@ -72,10 +75,10 @@ Build a practical Python project that demonstrates API usage, JSON/data processi
 - [x] Validate input
 
 ### T1.2 — JSON
-- [] Read JSON
-- [ ] Write JSON
-- [ ] Validate expected fields
-- [ ] Handle malformed JSON
+- [x] Read JSON
+- [x] Write JSON
+- [x] Validate expected fields
+- [x] Handle malformed JSON
 
 ---
 
